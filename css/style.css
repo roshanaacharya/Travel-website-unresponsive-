@@ -1,0 +1,302 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS';
+    }
+
+    /* loader */
+#preloader{
+    background-color:#101b42;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#status{
+    background-image: url("../img/loading.gif");
+    position: fixed;
+    width:100%;
+    height: 100%;
+    left:35%;
+    top:20%;
+    
+    background-repeat: no-repeat;
+}
+    
+header{
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    border-bottom:5px solid rgba(255, 166, 0, 0.959) ;
+
+}
+.nav{
+    position: sticky;
+    background-color:black;
+    border-bottom:5px solid rgba(255, 166, 0, 0.959) ;
+    height: 127px;
+    font-family: 'Comic Sans MS' ;
+}
+
+.mouse{
+     width: 150px;
+     height: 100px;
+     z-index: +1;
+     background-color:black;
+    
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.logo:hover{
+    transform: scale(0.8);
+    transition: 0.5s;
+    box-shadow: 0 0 300px #121615,
+    10px 0 30px #1c1f20,
+    -10px 0 30px #4b4949,
+    0 0 300px #161c1d inset,
+    0 0 10px  #5f0101 inset,
+    10px 0 30px #2f1f00 inset,
+    -10px 0 30px #4d444d inset;
+    }
+
+
+ul{
+    float:right;
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: 500px;
+    background-color: #fff;
+    height: 35px;
+    font-family:'Comic Sans MS'
+}
+
+ul li{
+    display: inline-block;
+    margin-top: 5px;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 10px;
+font-family: 'Comic Sans MS';
+    
+}
+
+ul li a{
+    text-decoration: none;
+    
+    color: black;
+    padding: 5px, 20px;
+    border: 1px solid #fff;
+    font-family: 'Comic Sans MS';
+}
+
+select{
+    border:0px;
+    outline:0px;
+    scroll-behavior: smooth;
+}
+#Hotels{
+    padding-right: 2px;
+}
+
+.Quote{
+  
+    color: white;
+    width: 100%;
+font-style: italic;
+position: absolute;
+margin-top:50px ;
+margin-left: 20px;
+}
+
+marquee{
+    width: 66.5%;
+}
+
+table{
+    width:2%;
+    height: 60%;
+    background-color: black;
+    color: #fff;
+    float:right;
+}
+
+.books{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 1.5px;
+    padding-left: 0.5px;
+}
+
+.image{
+    float:left;
+   width: 59.8%;
+   height: 60vh;
+   padding-top: 0cm;
+   }
+
+.patan{
+    width: 100%;
+    height: 80%;
+    padding-top: 10px;
+    background-color: black;
+border-bottom: solid black;
+}
+.sima{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    border-bottom: solid black;
+}
+h2{
+    padding-top: 5px;
+    padding-left: 5px;
+    font-family: 'Comic Sans MS';
+}
+h5{
+    padding-top: 5px;
+    padding-left: 5px;
+    font-family: 'Comic Sans MS';
+}
+p{
+    padding-top: 5px;
+    padding-left: 5px;
+    font-family: 'Comic Sans MS';
+}
+
+.kkk{
+    border-bottom:2px solid black;
+    background-color: #000;
+}
+
+.keep{
+    position: absolute;
+    height: 445px;
+    right: 20px;
+}
+
+.mine{
+    background-color: white;
+    color: black;
+    height: 445px;
+    width: 590px;
+    margin-left: 20px;
+}
+.bazz{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    border-bottom: solid black;
+
+}
+
+  .maincolor{
+    background-color: black;
+    color: white;
+  }
+  .noborder{
+    border: 0px !important;
+  }
+  .feature{
+    margin-top: 3%;
+  }
+  .hoveryellow:hover{
+    background: color #f00;
+    color: whitesmoke;
+  }
+  .feature:hover{
+    box-shadow: 4px 4px 4px rgb(36, 35, 35);
+  }
+
+  .row{
+      background-color: black;
+      color: white;
+  }
+  .card{
+    background-color: black;
+    color: white;
+  }
+  #button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .show-more {
+    width: 20px;
+    background-color: #0f0f0f;
+    border: 1px solid #3b3a3a;
+    padding: .8em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 2em;
+    letter-spacing: .25em;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    background-image: linear-gradient(top,#b43838,#a13232);
+    border-radius: 3px;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .show-more:hover {
+    background-color: #110909;
+    background-image: linear-gradient(top,#292828,#161616);
+    box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    border-color: #504f4f;
+  }
+  
+  .show-more:active {
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  #showmore{
+      float:left;
+  }
+
+  .showimore{
+      float: right;
+  }
